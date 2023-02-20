@@ -1,0 +1,282 @@
+body {
+    background-color: rgb(235, 235, 235);
+    color: #000000;
+}
+
+h2 {
+    text-align:left;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    padding-left: 2.5%;
+    padding-right: 3%;
+    font-size: 3rem;
+    color: #eee;
+}
+
+.barra-seccion {
+    background-color: #008073;
+   
+}
+
+.tamañoycolor {
+    font-size: 2rem;
+    color: darkred;
+}
+
+
+.logoAp {
+    filter: invert();
+}
+
+.card{
+    margin: 3%;
+}
+
+section {
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+p {
+    margin: 1% 1% ;
+    color: grey;
+}
+
+.lista {
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.nav {
+    --bs-nav-link-hover-color:#000000;
+}
+
+.nav-link {
+    color:#ffffff
+
+}
+
+.nav-pills {
+    --bs-nav-pills-border-radius: none;
+    --bs-nav-pills-link-active-color: none;
+    --bs-nav-pills-link-active-bg: none;
+}
+
+.btn-primary {
+    --bs-btn-color: #212529;
+    --bs-btn-bg: #f8f9fa;
+    --bs-btn-border-color: #212529;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #008073;
+    --bs-btn-hover-border-color: #ffffff;
+    --bs-border-width: 1px;
+	--bs-btn-active-bg: #008073;
+    --bs-btn-active-border-color: #000000;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+
+}
+
+/* Circulos de Porcentage*/
+
+.flex-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+
+
+.single-chart {
+    width: 20%;
+    justify-content: space-around;
+    margin: 2%; 
+}
+
+.circular-chart {
+    display: block;
+    margin: 10px auto;
+    max-width: 60%;
+    max-height: 150px;
+}
+
+
+
+.circle-bg {
+    fill: none;
+    stroke: #ccc1c1;
+    stroke-width: 3.8;
+}
+
+.circle {
+    fill: none;
+    stroke-width: 2.8;
+    stroke-linecap: round;
+
+}
+
+
+@keyframes progress {
+    0% {
+        stroke-dasharray: 0 100;
+    }
+}
+
+
+.circular-chart.orange .circle {
+    stroke: #ff9f00;
+}
+
+
+.circular-chart.green .circle {
+    stroke: #4CC790;
+}
+
+.circular-chart.blue .circle {
+    stroke: #3c9ee5;
+}
+
+.percentage {
+    fill: #666;
+    font-family: sans-serif;
+    font-size: 0.5em;
+    text-anchor: middle;
+}
+
+
+
+/* FOOTER */
+
+
+.footer-distributed{
+	background: #008073;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 14px sans-serif;
+	padding: 10px 10px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+
+/* Footer Left */
+
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+.footer-distributed .footer-left i{
+	
+	color: #ffffff;
+	font-size: 18px;
+	width: 28px;
+	height: 28px;
+	text-align: center;
+	line-height: 32px;
+	margin: 5px 10px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-left i.fa-envelope{
+	font-size: 18px;
+	line-height: 30px;
+}
+
+.footer-distributed .footer-left p{
+	display: inline-block;
+	color: #ffffff;
+  font-weight:400;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-left p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-left p a{
+	color:  #ffffff;
+	text-decoration: none;;
+}
+
+
+/* Footer Center */
+
+
+.footer-distributed .footer-center{
+	width: 30%;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 25%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #ccc1c1;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+}

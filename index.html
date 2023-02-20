@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c3586c4acb.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Mi portfolio</title>
+    <link rel="shortcut icon" href="nn.ico" type="image/x-icon">
+</head>
+
+<body>
+
+
+    <!-- Sección de Navbar (Boostrap)-->
+    <header>
+        <nav class="navbar navbar-expand-evenly bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="https://argentinaprograma.inti.gob.ar" target="_blank">
+                    <img src="assets/img/Logo Argentina Programa" alt="logoArgentinaPrograma" title="Argentina Programa"
+                        class="logoAp img-fluid">
+                </a>
+
+                <!-- Lista de REDES SOCIALES (Bootstrap + Fontawesome)-->
+                <ul class="list-group list-group-horizontal px-4">
+
+                    <li class="list-group-item text-primary bg-body-tertiary" style="border:none;">
+                        <a href="http://linkedin.com/" target="_blank" title="Linkedin">
+                            <i class="fa-brands fa-linkedin fa-2x" style="color:#0e76a8;"></i>
+                        </a>
+                    </li>
+                    <li class="list-group-item text-primary bg-body-tertiary" style="border:none;">
+                        <a href="http://facebook.com/" target="_blank">
+                            <i class="fa-brands fa-facebook-f fa-2x" style="color:  #3b5998;" alt="Facebook"
+                                title="Facebook"></i>
+                        </a>
+                    </li>
+                    <li class=" list-group-item text-primary bg-body-tertiary" style="border:none;">
+                        <a href="https://github.com/DavidPascual1985" target="_blank" title="GitHub">
+                            <i class="fa-brands fa-github fa-2x" style="color:#171515;"></i>
+                        </a>
+                    </li>
+
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#botonLogin">
+                        Login
+                    </button>
+                </ul>
+
+
+            </div>
+        </nav>
+
+    </header>
+
+    <!-- Esta seccion ofrece una DESCRIPCION PERSONAL del usuario -->
+
+    <!-- Navbar modelo 2 -->
+    <nav id="navbar-scroll1" class="navbar barra-seccion navbar-expand-lg bd-navbar sticky-top"
+        style="scrollbar-arrow-color: rgb(7, 127, 231);">
+        <a class="navbar-brand" href="#"></a>
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a class="nav-link" href="#sobreMi">Sobre mi</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#expLaboral">Experiencia Laboral</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#educacion">Educacion</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#habilidades">Habilidades</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#proyectos">Proyectos</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link text-white dropdown-toggle" data-bs-toggle="dropdown" role="button"
+                    aria-expanded="false">CONTACTO</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#contacto">Facebook</a></li>
+                    <li><a class="dropdown-item" href="#scrollspyHeading4">Github</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#scrollspyHeading5">Linkedin</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <div data-bs-spy="scroll" data-bs-target="#navbar-scroll1" data-bs-root-margin="0px 0px -40%"
+        data-bs-smooth-scroll="true" class="scrollspy-example p-3 rounded-2" tabindex="0">
+
+        <!-- Esta seccion describe la INFORMACION PERSONAL del usuario -->
+
+        <section id="sobreMi">
+
+            <nav class="navbar barra-seccion" >
+                <h2 class="fw-light">SOBRE MI</h2>
+                <a class="navbar-brand">
+                    <div class="d-grid gap-4 justify-content-md-end">
+                        <button class="btn btn-primary me-md-2" type="button">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+                </a>
+            </nav>
+
+
+
+            <div class="card" style="max-width: 100%;">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <img src="assets/img/ImagenPerfil.jpg" class="img-fluid justify-content-center"
+                            alt="ImagenPerfil">
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                    <button class="btn btn-primary me-md-2" type="button">
+                                        <i class="fa-regular fa-pen-to-square"></i>
+                                    </button>
+                                    <button class="btn btn-primary" type="button">
+                                        <i class="fa-regular fa-trash-can"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <p class="card-text text-center lh-base fs-4">Lorem ipsum dolor sit amet consectetur
+                                adipisicing
+                                elit. Suscipit, ab
+                                expedita earum consectetur nemo vitae! Sequi qui porro repellat ipsam aperiam tempore
+                                nihil?
+                                Fuga consequuntur animi nobis eligendi, earum ea?
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+
+        <!-- Esta seccion describe la EXPERIENCIA LABORAL del usuario -->
+        <section id="expLaboral">
+
+            <nav class="navbar barra-seccion" >
+                <h2 class="fw-light">EXPERIENCIA LABORAL</h2>
+                <a class="navbar-brand">
+                    <div class="d-grid gap-4 justify-content-md-end">
+                        <button class="btn btn-primary me-md-2" type="button">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+                </a>
+            </nav>
+
+
+            <div class="container-fluid">
+
+
+                <!-- CARD de Experiencia 1 -->
+                <div class="card">
+                    <div class="card-header">
+                        <nav class="navbar bg-body-tertiary">
+                            <a class="navbar-brand">
+                                <h4> Encabezado de experiencia 1</h4>
+                            </a>
+
+                            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                <button class="btn btn-primary me-md-2" type="button">
+                                    <i class="fa-regular fa-pen-to-square"></i>
+                                </button>
+                                <button class="btn btn-primary" type="button">
+                                    <i class="fa-regular fa-trash-can"></i>
+                                </button>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="card-body">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto ad nisi aut
+                            dolorum nulla, quibusdam placeat, aliquam quisquam velit obcaecati doloribus incidunt
+                            maiores
+                            laudantium laborum nesciunt aliquid adipisci consectetur quasi?</p>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-footer">
+                            <nav class="navbar bg-body-tertiary">
+                                <div class="container">
+                                    <span style="color:gray"> Periodo de desempeño</span>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD de Experiencia 2 -->
+                <div class="card">
+                    <div class="card-header">
+                        <nav class="navbar bg-body-tertiary">
+                            <a class="navbar-brand">
+                                <h4> Encabezado de experiencia 2</h4>
+                            </a>
+
+                            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                <button class="btn btn-primary me-md-2" type="button">
+                                    <i class="fa-regular fa-pen-to-square"></i>
+                                </button>
+                                <button class="btn btn-primary" type="button">
+                                    <i class="fa-regular fa-trash-can"></i>
+                                </button>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="card-body">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto ad nisi aut
+                            dolorum nulla, quibusdam placeat, aliquam quisquam velit obcaecati doloribus incidunt
+                            maiores
+                            laudantium laborum nesciunt aliquid adipisci consectetur quasi?
+                        </p>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-footer">
+                            <nav class="navbar bg-body-tertiary">
+                                <div class="container">
+                                    <span style="color:gray"> Periodo de desempeño</span>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD de Experiencia 3 -->
+                <div class="card">
+                    <div class="card-header">
+                        <nav class="navbar bg-body-tertiary">
+                            <div class="container-fluid">
+                                <a class="navbar-brand">
+                                    <h4> Encabezado de experiencia</h4>
+                                </a>
+
+                                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                    <button class="btn btn-primary me-md-2" type="button">
+                                        <i class="fa-regular fa-pen-to-square"></i>
+                                    </button>
+                                    <button class="btn btn-primary" type="button">
+                                        <i class="fa-regular fa-trash-can"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="card-body">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto ad nisi aut
+                            dolorum nulla, quibusdam placeat, aliquam quisquam velit obcaecati doloribus incidunt
+                            maiores
+                            laudantium laborum nesciunt aliquid adipisci consectetur quasi?</p>
+                    </div>
+                    <div class="card-body">
+                        <div class=" card-footer">
+                            <nav class="navbar bg-body-tertiary">
+                                <div class="container">
+                                    <span style="color:gray"> Periodo de desempeño</span>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Esta seccion describe el NIVEL EDUCATIVO del usuario -->
+        <section id="educacion">
+
+            <nav class="navbar barra-seccion" >
+                <h2 class="fw-light">EDUCACION</h2>
+                <a class="navbar-brand">
+                    <div class="d-grid gap-4 justify-content-md-end">
+                        <button class="btn btn-primary me-md-2" type="button">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+                </a>
+            </nav>
+
+            <div class="card">
+                <div class="card-header">
+                    <nav class="navbar bg-body-tertiary">
+                        <div class="container-fluid">
+                            <a class="navbar-brand">
+                                <h4> Nivel educativo</h4>
+                            </a>
+
+                            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                <button class="btn btn-primary me-md-2" type="button">
+                                    <i class="fa-regular fa-pen-to-square"></i>
+                                </button>
+                                <button class="btn btn-primary" type="button">
+                                    <i class="fa-regular fa-trash-can"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+
+                <div class="card-body">
+
+                    <ul class="list-group list-group-flush lista">
+                        <li class="list-group-item">An item</li>
+                        <li class="list-group-item">A second item</li>
+                        <li class="list-group-item">A third item</li>
+                        <li class="list-group-item">A fourth item</li>
+                        <li class="list-group-item">And a fifth one</li>
+                    </ul>
+                </div>
+
+                <div class="card>
+            <div class=" card-footer">
+                    <nav class="navbar bg-body-tertiary">
+                        <div class="container">
+                            <span style="color:gray"> Periodo de desempeño</span>
+                        </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Esta seccion describe las HABILIDADES del usuario -->
+        <section id="habilidades">
+
+            <nav class="navbar barra-seccion" >
+                <h2 class="fw-light">HABILIDADES</h2>
+                <a class="navbar-brand">
+                    <div class="d-grid gap-4 justify-content-md-end">
+                        <button class="btn btn-primary me-md-2" type="button">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+                </a>
+            </nav>
+
+            <!-- Aqui comienzan los CHARTS -->
+            <div class="container-fluid">
+
+                <div class="flex-outer">
+
+                    <!-- Seccion 1 de CHARTS -->
+                    <div class="flex-wrapper justify-content-around">
+
+                        <!-- CHART 1 -->
+                        <div class="single-chart">
+
+                            <!-- Botones de edicion para CHART -->
+                            <div class="row-cols-1">
+                                <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                                    <button class="btn btn-primary me-md-2" type="button">
+                                        <i class="fa-regular fa-pen-to-square"></i>
+                                    </button>
+                                    <button class="btn btn-primary" type="button">
+                                        <i class="fa-regular fa-trash-can"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Configuracion del CHART -->
+                            <svg viewBox="0 0 36 36" class="circular-chart orange">
+                                <path class="circle-bg" d="M18 2.0845
+                    a 15.9155 15.9155 0 0 1 0 31.831
+                    a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                <path class="circle" stroke-dasharray="30, 100" d="M18 2.0845
+                    a 15.9155 15.9155 0 0 1 0 31.831
+                    a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                <text x="18" y="20.35" class="percentage">30%</text>
+
+                            </svg>
+                            <p class="text-center text-responsive fs-4">HTML</p>
+
+                        </div>
+
+                        <!-- CHART 2 -->
+                        <div class="single-chart">
+
+                            <!-- Botones de edicion para CHART -->
+                            <div class="row-cols-1">
+                                <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                                    <button class="btn btn-primary me-md-2" type="button">
+                                        <i class="fa-regular fa-pen-to-square"></i>
+                                    </button>
+                                    <button class="btn btn-primary" type="button">
+                                        <i class="fa-regular fa-trash-can"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Configuracion del CHART -->
+                            <svg viewBox="0 0 36 36" class="circular-chart blue">
+                                <path class="circle-bg" d="M18 2.0845
+                    a 15.9155 15.9155 0 0 1 0 31.831
+                    a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                <path class="circle" stroke-dasharray="75, 100" d="M18 2.0845
+                    a 15.9155 15.9155 0 0 1 0 31.831
+                    a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                <text x="18" y="20.35" class="percentage">75%</text>
+                            </svg>
+                            <p class="text-center fs-4">CSS</p>
+                        </div>
+
+                        <!-- CHART 3 -->
+                        <div class="single-chart">
+
+                            <!-- Botones de edicion para CHART -->
+                            <div class="row-cols-1">
+                                <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                                    <button class="btn btn-primary me-md-2" type="button">
+                                        <i class="fa-regular fa-pen-to-square"></i>
+                                    </button>
+                                    <button class="btn btn-primary" type="button">
+                                        <i class="fa-regular fa-trash-can"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Configuracion del CHART -->
+                            <svg viewBox="0 0 36 36" class="circular-chart green">
+                                <path class="circle-bg" d="M18 2.0845
+                    a 15.9155 15.9155 0 0 1 0 31.831
+                    a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                <path class="circle" stroke-dasharray="100, 100" d="M18 2.0845
+                    a 15.9155 15.9155 0 0 1 0 31.831
+                    a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                <text x="18" y="20.35" class="percentage">100%</text>
+                            </svg>
+                            <p class="text-center fs-4">JavaScript</p>
+                        </div>
+                    </div>
+
+
+                    <!-- Seccion 2 de CHARTS -->
+                    <div class="flex-wrapper justify-content-around">
+
+                        <!-- CHART 1 -->
+                        <div class="single-chart">
+
+                            <!-- Botones de edicion para CHART -->
+                            <div class="row-cols-1">
+                                <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                                    <button class="btn btn-primary me-md-2" type="button">
+                                        <i class="fa-regular fa-pen-to-square"></i>
+                                    </button>
+                                    <button class="btn btn-primary" type="button">
+                                        <i class="fa-regular fa-trash-can"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Configuracion del CHART -->
+                            <svg viewBox="0 0 36 36" class="circular-chart orange">
+                                <path class="circle-bg" d="M18 2.0845
+                    a 15.9155 15.9155 0 0 1 0 31.831
+                    a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                <path class="circle" stroke-dasharray="50, 100" d="M18 2.0845
+                    a 15.9155 15.9155 0 0 1 0 31.831
+                    a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                <text x="18" y="20.35" class="percentage">50%</text>
+
+                            </svg>
+                            <p class="text-center fs-4">Trabajo en equipo</p>
+                        </div>
+
+                        <!-- CHART 2 -->
+                        <div class="single-chart">
+
+                            <!-- Botones de edicion para CHART -->
+                            <div class="row-cols-1">
+                                <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                                    <button class="btn btn-primary me-md-2" type="button">
+                                        <i class="fa-regular fa-pen-to-square"></i>
+                                    </button>
+                                    <button class="btn btn-primary" type="button">
+                                        <i class="fa-regular fa-trash-can"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Configuracion del CHART -->
+                            <svg viewBox="0 0 36 36" class="circular-chart blue">
+                                <path class="circle-bg" d="M18 2.0845
+                        a 15.9155 15.9155 0 0 1 0 31.831
+                        a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                <path class="circle" stroke-dasharray="75, 100" d="M18 2.0845
+                    a 15.9155 15.9155 0 0 1 0 31.831
+                    a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                <text x="18" y="20.35" class="percentage">75%</text>
+                            </svg>
+                            <p class="text-center fs-4">Escucha activa</p>
+
+                        </div>
+
+                        <!-- CHART 3 -->
+                        <div class="single-chart">
+
+                            <!-- Botones de edicion para CHART -->
+                            <div class="row-cols-1">
+                                <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                                    <button class="btn btn-primary me-md-2" type="button">
+                                        <i class="fa-regular fa-pen-to-square"></i>
+                                    </button>
+                                    <button class="btn btn-primary" type="button">
+                                        <i class="fa-regular fa-trash-can"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Configuracion del CHART -->
+                            <svg viewBox="0 0 36 36" class="circular-chart green">
+                                <path class="circle-bg" d="M18 2.0845
+                    a 15.9155 15.9155 0 0 1 0 31.831
+                    a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                <path class="circle" stroke-dasharray="100, 100" d="M18 2.0845
+                    a 15.9155 15.9155 0 0 1 0 31.831
+                    a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                <text x="18" y="20.35" class="percentage">100%</text>
+                            </svg>
+                            <p class="text-center fs-4">Adaptabilidad</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+
+
+        <!-- Esta seccion describe los PROYECTOS realizados o en curso -->
+        <section id="proyectos">
+
+            <nav class="navbar barra-seccion" >
+                <h2 class="fw-light">PROYECTOS</h2>
+                <a class="navbar-brand">
+                    <div class="d-grid gap-4 justify-content-md-end">
+                        <button class="btn btn-primary me-md-2" type="button">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+                </a>
+            </nav>
+
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+
+                <!-- CARD Proyecto1 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="assets/img/img_proyecto2.jpg" class="card-img-top" alt="img_proyecto2">
+                        <div class="container-fluid">
+                            <div class="card-body-mp-0">
+                                <div class="card-header-mp-0 bg-transparent">
+                                    <div class="card-title">
+                                        <nav class="navbar">
+                                            <span class="navbar-text h4 text-dark">Proyecto 1</span>
+                                            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                                <button class="btn btn-primary me-md-2" type="button">
+                                                    <i class="fa-regular fa-pen-to-square"></i>
+                                                </button>
+                                                <button class="btn btn-primary" type="button">
+                                                    <i class="fa-regular fa-trash-can"></i>
+                                                </button>
+                                            </div>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                to additional content. This content is a little bit longer.</p>
+                            <div class="card-body">
+                                <a href="#" class="card-link fw-light">Link del proyecto</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD Proyecto2 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="assets/img/5herramientas_0.png" class="card-img-top" alt="proyecto1">
+                        <div class="container-fluid">
+                            <div class="card-body-mp-0">
+                                <div class="card-header-mp-0 bg-transparent">
+                                    <div class="card-title">
+                                        <nav class="navbar">
+                                            <span class="navbar-text h4 text-dark">Proyecto 2</span>
+                                            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                                <button class="btn btn-primary me-md-2" type="button">
+                                                    <i class="fa-regular fa-pen-to-square"></i>
+                                                </button>
+                                                <button class="btn btn-primary" type="button">
+                                                    <i class="fa-regular fa-trash-can"></i>
+                                                </button>
+                                            </div>
+                                        </nav>
+                                    </div>
+                                </div>
+                                <p class="card-text">This is a short card.</p>
+                            </div>
+                            <div class="card-body">
+                                <a href="#" class="card-link fw-light">Link del proyecto</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD Proyecto3 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="assets/img/img_proyecto3.jpg" class="card-img-top" alt="img_proyecto3">
+                        <div class="container-fluid">
+                            <div class="card-body-mp-0">
+                                <div class="card-header-mp-0 bg-transparent">
+                                    <div class="card-title">
+                                        <nav class="navbar">
+                                            <span class="navbar-text h4 text-dark">Proyecto 3</span>
+                                            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                                <button class="btn btn-primary me-md-2" type="button">
+                                                    <i class="fa-regular fa-pen-to-square"></i>
+                                                </button>
+                                                <button class="btn btn-primary" type="button">
+                                                    <i class="fa-regular fa-trash-can"></i>
+                                                </button>
+                                            </div>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                to additional content.</p>
+                            <div class="card-body">
+                                <a href="#" class="card-link fw-light">Link del proyecto</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD Proyecto4 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="./assets/img/Proyecto4.png" class="card-img-top" alt="...">
+                        <div class="container-fluid">
+                            <div class="card-body-mp-0">
+                                <div class="card-header-mp-0 bg-transparent">
+                                    <div class="card-title">
+                                        <nav class="navbar">
+                                            <span class="navbar-text h4 text-dark">Proyecto 4</span>
+                                            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                                <button class="btn btn-primary me-md-2" type="button">
+                                                    <i class="fa-regular fa-pen-to-square"></i>
+                                                </button>
+                                                <button class="btn btn-primary" type="button">
+                                                    <i class="fa-regular fa-trash-can"></i>
+                                                </button>
+                                            </div>
+                                        </nav>
+                                    </div>
+                                </div>
+                                <p class="card-text">This is a longer card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                                <div class="card-body">
+                                    <a href="#" class="card-link fw-light">Link del proyecto</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+
+        <!-- MODALES -->
+
+        <!-- Modal Boton de LOGIN -->
+        <div class="modal fade" id="botonLogin" tabindex="-1" aria-labelledby="exampleModalLael" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLbel">Ingresá tus datos</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <label for="userFormLabel" class="frm-label">Usuario</label>
+                            <input type="text" class="form-control" id="validaionServerUsername">
+                            <label for="userFormLabel" class="form-label">Contraseña</label>
+                            <input type="password" class="form-control" id="inputPassword">
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                        <button type="button" class="btn btn-primary">Aceptar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- JS -->
+        <script src="output/app.js"></script>
+
+        <!-- Enlace CDN de Bootsrap para JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+            crossorigin="anonymous"></script>
+    </div>
+</body>
+
+
+
+<footer>
+
+    <div class="footer-distributed">
+
+        <div class="footer-left" id="contacto">
+
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p>San Antonio de Arredondo, Cordoba, Argentina</p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+54 3541-6299-86</p>
+            </div>
+
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:davidmiguelpascual@company.com">davidmiguelpascual@gmail.com</a></p>
+            </div>
+
+        </div>
+
+        <div class="footer-center">
+
+            <div class="footer-icons">
+
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-github"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+
+            </div>
+
+        </div>
+
+        <div class="footer-right">
+
+            <p class="footer-company-about">
+                <span>Sobre la compañia</span>
+                Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus
+                vehicula sit amet.
+            </p>
+        </div>
+
+    </div>
+
+</footer>
+
+</html>

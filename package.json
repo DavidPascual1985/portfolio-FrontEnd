@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "http-server": "^14.1.1"
+  },
+  "name": "argprog",
+  "version": "1.0.0",
+  "main": "app.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": "http-server -p 8436"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
