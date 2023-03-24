@@ -9,7 +9,7 @@ h2 {
     padding-bottom: 0%;
     padding-left: 2.5%;
     padding-right: 3%;
-    font-size: 3rem;
+    
     color: #eee;
 }
 
@@ -17,12 +17,6 @@ h2 {
     background-color: #008073;
    
 }
-
-.tamañoycolor {
-    font-size: 2rem;
-    color: darkred;
-}
-
 
 .logoAp {
     filter: invert();
@@ -258,7 +252,7 @@ p {
 }
 
 
-/* If you don't want the footer to be responsive, remove these media queries */
+/* Media queries para hacer responsive el footer */
 
 @media (max-width: 880px) {
 
