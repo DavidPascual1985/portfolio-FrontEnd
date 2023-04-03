@@ -62,8 +62,6 @@
     </header>
 
     <!-- Navbar FIJA -->
-
-    <!-- Navbar modelo 2 -->
     <nav id="navbar-scroll1" class="navbar barra-seccion navbar-expand bd-navbar sticky-top"
         style="scrollbar-arrow-color: rgb(7, 127, 231);">
         <a class="navbar-brand" href="#"></a>
@@ -687,7 +685,8 @@
                 <h2 class="fw-light">PROYECTOS</h2>
                 <a class="navbar-brand">
                     <div class="d-grid gap-4 justify-content-md-end">
-                        <button class="btn btn-primary me-md-2" type="button">
+                        <button class="btn btn-primary me-md-2" type="button" data-bs-toggle="modal"
+                            data-bs-target="#botonProyectos">
                             <i class="fa-solid fa-plus"></i>
                         </button>
                     </div>
@@ -707,7 +706,8 @@
                                         <nav class="navbar">
                                             <span class="navbar-text h4 text-dark">Proyecto 1</span>
                                             <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                                                <button class="btn btn-primary me-md-2" type="button">
+                                                <button class="btn btn-primary me-md-2" type="button"
+                                                    data-bs-toggle="modal" data-bs-target="#botonEditarProyectos">
                                                     <i class="fa-regular fa-pen-to-square"></i>
                                                 </button>
                                                 <button class="btn btn-primary" type="button" data-bs-toggle="modal"
@@ -739,7 +739,8 @@
                                         <nav class="navbar">
                                             <span class="navbar-text h4 text-dark">Proyecto 2</span>
                                             <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                                                <button class="btn btn-primary me-md-2" type="button">
+                                                <button class="btn btn-primary me-md-2" type="button"
+                                                    data-bs-toggle="modal" data-bs-target="#botonEditarProyectos">
                                                     <i class="fa-regular fa-pen-to-square"></i>
                                                 </button>
                                                 <button class="btn btn-primary" type="button" data-bs-toggle="modal"
@@ -770,7 +771,8 @@
                                         <nav class="navbar">
                                             <span class="navbar-text h4 text-dark">Proyecto 3</span>
                                             <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                                                <button class="btn btn-primary me-md-2" type="button">
+                                                <button class="btn btn-primary me-md-2" type="button"
+                                                    data-bs-toggle="modal" data-bs-target="#botonEditarProyectos">
                                                     <i class="fa-regular fa-pen-to-square"></i>
                                                 </button>
                                                 <button class="btn btn-primary" type="button" data-bs-toggle="modal"
@@ -802,7 +804,8 @@
                                         <nav class="navbar">
                                             <span class="navbar-text h4 text-dark">Proyecto 4</span>
                                             <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                                                <button class="btn btn-primary me-md-2" type="button">
+                                                <button class="btn btn-primary me-md-2" type="button"
+                                                    data-bs-toggle="modal" data-bs-target="#botonEditarProyectos">
                                                     <i class="fa-regular fa-pen-to-square"></i>
                                                 </button>
                                                 <button class="btn btn-primary" type="button" data-bs-toggle="modal"
@@ -872,7 +875,7 @@
                         <label for="myFile" class="form-label">Imagen del baner</label>
                         <input type="file" class="form-control" accept="image/*" id="validaionServerUsername">
                         <label for="myFile" class="form-label">Imagen de perfil</label>
-                        <input type="file" class="form-control" accept=".jpg, .png," height="240px"
+                        <input type="file" class="form-control" accept="image/*" height="240px"
                             id="validaionServerUsername">
                         <label for="userFormLabel" class="form-label">Nombre</label>
                         <input type="text" class="form-control" id="inputName" size="40">
@@ -1174,6 +1177,68 @@
         </div>
     </div>
 
+    <!--Modal Boton CREAR Proyectos-->
+
+    <div class="modal fade" id="botonProyectos" tabindex="-1" aria-labelledby="exampleModalLael" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLbel">Ingresá los proyectos realizados</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <label for="myFile" class="form-label">Imagen del Proyecto</label>
+                        <input type="file" class="form-control" accept="image/*" id="validaionServerUsername">
+                        <label for="userFormLabel" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="inputName" size="40">
+                        <label for="userFormLabel" class="form-label">Descripción</label>
+                        <textarea class="form-control" id="userFormLabel" rows="4"
+                            placeholder="Puedes escribir hasta 200 caracteres aquí..." size="200"></textarea>
+                        <label for="userFormLabel" class="form-label">Enlace URL</label>
+                        <input type="url" class="form-control" id="userFormLabel" name="homepage">
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="checkbox" class="btn btn-primary">Aceptar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Modal Boton EDITAR Proyectos-->
+
+    <div class="modal fade" id="botonEditarProyectos" tabindex="-1" aria-labelledby="exampleModalLael"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLbel">Editar Proyecto</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <label for="myFile" class="form-label">Imagen del Proyecto</label>
+                        <input type="file" class="form-control" accept="image/*" id="validaionServerUsername">
+                        <label for="userFormLabel" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="inputName" size="40">
+                        <label for="userFormLabel" class="form-label">Descripción</label>
+                        <textarea class="form-control" id="userFormLabel" rows="4"
+                            placeholder="Puedes escribir hasta 200 caracteres aquí..." size="200"></textarea>
+                        <label for="userFormLabel" class="form-label">Enlace URL</label>
+                        <input type="url" class="form-control" id="userFormLabel" name="homepage">
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="checkbox" class="btn btn-primary">Editar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!--Modal Boton de ELIMINAR-->
 
     <div class="modal fade" tabindex="-1" id="botonEliminar" aria-labelledby="exampleModalLael" aria-hidden="true">
@@ -1190,6 +1255,69 @@
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
                     <button type="button" class="btn btn-danger">Eliminar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Modal Boton de FOOTER-->
+
+    <div class="modal fade" id="botonFooter" tabindex="-1" aria-labelledby="exampleModalLbel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Editar datos</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <form>
+                        <div class="row">
+                            <div class="col">
+                                <label for="userFormLabel" class="form-label">Dirección
+                                </label>
+                                <input type="text" class="form-control">
+                            </div>
+
+                            <div class="col">
+                                <label for="userFormLabel" class="form-label">Telefono</label>
+                                <input type="number" class="form-control" min="0">
+                            </div>
+
+                            <div class="col">
+                                <label for="userFormLabel" class="form-label">Email</label>
+                                <input type="email" class="form-control">
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+
+                            <div class="col">
+                                <label for="userFormLabel" class="form-label">Linkedin</label>
+                                <input type="url" class="form-control" id="userFormLabel" name="homepage" placeholder="Link URL...">
+                            </div>
+                            <div class="col">
+                                <label for="userFormLabel" class="form-label">Facebook</label>
+                                <input type="url" class="form-control" id="userFormLabel" name="homepage" placeholder="Link URL...">
+                            </div>
+                            <div class="col">
+                                <label for="userFormLabel" class="form-label">GitHub</label>
+                                <input type="url" class="form-control" id="userFormLabel" name="homepage" placeholder="Link URL...">
+                            </div>
+                        </div>
+                        <label for="userFormLabel" class="form-label">Titulo
+                        </label>
+                        <input type="text" class="form-control">
+                        <label for="userFormLabel" class="form-label">Descripción</label>
+                        <textarea class="form-control" id="userFormLabel" rows="4"
+                            placeholder="Puedes escribir hasta 200 caracteres aquí..." size="200"></textarea>
+                    </form>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary">Editar</button>
                 </div>
             </div>
         </div>
@@ -1242,15 +1370,19 @@
                 <a href="https://www.facebook.com/profile.php?id=100076512797812" target="_blank" title="Facebook">
                     <i class="fa fa-facebook"></i></a>
                 <a href="https://github.com/DavidPascual1985" target="_blank" title="GitHub">
-                    <i class="fa fa-github"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
+                    <i class="fa fa-github"></i></a>                
 
             </div>
 
         </div>
 
         <div class="footer-right">
-
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button class="btn btn-primary me-md-2" type="button" data-bs-toggle="modal"
+                    data-bs-target="#botonFooter">
+                    <i class="fa-regular fa-pen-to-square"></i>
+                </button>
+            </div>
             <p class="footer-company-about">
                 <span>Sobre la compañia</span>
                 Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus
