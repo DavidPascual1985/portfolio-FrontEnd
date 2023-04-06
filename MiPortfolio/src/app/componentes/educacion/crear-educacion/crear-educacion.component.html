@@ -1,0 +1,54 @@
+<div class="modal fade" id="botonCrearEducacion" tabindex="-1" aria-labelledby="exampleModalLbel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Educación adquirida</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body">
+                <form>
+                    <div class="row">
+                        <div class="col">
+                            <label for="userFormLabel" class="form-label">Titulo o disciplina adquirida
+                            </label>
+                            <input type="text" class="form-control">
+                        </div>
+
+                        <div class="col">
+                            <label for="userFormLabel" class="form-label">Institución</label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+
+                        <div class="col">
+                            <label for="userFormLabel" class="form-label">Desde</label>
+                            <input type="date" class="form-control">
+                        </div>
+                        <div class="col">
+                            <label for="userFormLabel" class="form-label">Hasta</label>
+                            <input type="date" class="form-control">
+                        </div>
+                        <div class="col">
+                            <label for="userFormLabel" class="form-label">Metodo de aprendizaje</label>
+                            <select id="inputEducacion" class="form-select">
+                                <option selected>Seleccione...</option>
+                                <option value="1">Prescencial/Semi-prescencial</option>
+                                <option value="2">Online/Autodidacta</option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-primary">Crear</button>
+            </div>
+        </div>
+    </div>
+</div>

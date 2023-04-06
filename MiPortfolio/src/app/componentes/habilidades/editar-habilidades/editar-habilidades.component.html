@@ -1,0 +1,37 @@
+<div class="modal fade" id="botonEditarSkills" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Editar habilidades</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="row">
+                        <div class="col-7">
+                            <label for="userFormLabel" class="form-label">Habilidad</label>
+                            <input type="text" class="form-control" size="20">
+                        </div>
+                        <div class="col-3">
+                            <label for="userFormLabel" class="form-label">Porcentage</label>
+                            <div class="input-group mb-3">
+                                <input type="number" class="form-control" aria-label="Porcentage de habilidad"
+                                    min="0" max="100" step="5">
+                                <span class="input-group-text">%</span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <label for="favcolor" class="form-label">Color</label>
+                            <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary">Editar</button>
+            </div>
+        </div>
+    </div>
+</div>
