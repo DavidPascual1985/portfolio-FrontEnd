@@ -1,0 +1,139 @@
+{
+    "nombre": "David Pascual",
+    "sobreMi": "Full Stack Web Developer Jr",
+    "imagenBaner": "../assets/img/imagen-baner.png",
+    "imagenPerfil": "../assets/img/imagenPerfil.jpg",
+
+    "experiencias":[
+        {
+            "id":1,
+            "empresa": "empresa 1",
+            "cargo": "cargo 1",
+            "tareas": "tarea 1",
+            "desde": "12-12-2001",
+            "hasta": "12-12-2002"
+        },
+        {
+            "id":2,
+            "empresa": "empresa 2",
+            "cargo": "cargo 2",
+            "tareas": "tarea 2",
+            "desde": "12-12-2003",
+            "hasta": "12-12-2004"
+        },
+        {
+            "id":3,
+            "empresa": "empresa 3",
+            "cargo": "cargo 3",
+            "tareas": "tarea 3",
+            "desde": "12-12-2005",
+            "hasta": "12-12-2006"
+        }
+    ],
+
+    "educacion": [
+        {
+            "id":1,
+            "titulo": "titulo 1",
+            "institucion": "institucion 2",
+            "desde":"12-12-1995",
+            "hasta": "12-12-1996",
+            "aprendizaje": "prescencial"
+        },
+        {
+            "id":2,
+            "titulo": "titulo 2",
+            "institucion": "institucion 2",
+            "desde":"12-12-1997",
+            "hasta": "12-12-1998",
+            "aprendizaje": "prescencial"
+        },
+        {
+            "id":3,
+            "titulo": "titulo 3",
+            "institucion": "institucion 3",
+            "desde":"12-12-1999",
+            "hasta": "12-12-2000",
+            "aprendizaje": "prescencial"
+        },
+        {
+            "id":4,
+            "titulo": "conocimiento 4",
+            "institucion": "institucion 4",
+            "desde":"12-12-2001",
+            "hasta": "12-12-2002",
+            "aprendizaje": "prescencial"
+        }
+    ],
+
+    "habilidades": [
+        {
+            "id": 1,
+            "habilidad": "habilidad 1",
+            "porcentaje": 10
+        },
+        {
+            "id": 2,
+            "habilidad": "habilidad 2",
+            "porcentaje": 20
+        },
+        {
+            "id": 3,
+            "habilidad": "habilidad 3",
+            "porcentaje": 30
+        },
+        {
+            "id": 4,
+            "habilidad": "habilidad 4",
+            "porcentaje": 40
+        },
+        {
+            "id": 5,
+            "habilidad": "habilidad 5",
+            "porcentaje": 50
+        },
+        {
+            "id": 6,
+            "habilidad": "habilidad 6",
+            "porcentaje": 60
+        }
+    ],
+
+    "proyectos": [
+        {
+            "id": 1,
+            "imagen": "..assets/img/5herramientas_0.png",
+            "nombre": "proyecto 1",
+            "descripcion": "descripcion 1",
+            "url": "http://proyecto1.com"
+        },
+        {
+            "id": 2,
+            "imagen": "..assets/img/img_proyecto2.jpg",
+            "nombre": "proyecto 2",
+            "descripcion": "descripcion 2",
+            "url": "http://proyecto1.com"
+        },
+        {
+            "id": 3git status,
+            "imagen": "..assets/img/img_proyecto3.jpg",
+            "nombre": "proyecto 3",
+            "descripcion": "descripcion 3",
+            "url": "http://proyecto1.com"
+        },
+        {
+            "id": 4,
+            "imagen": "..assets/img/Proyecto4.png",
+            "nombre": "proyecto 4",
+            "descripcion": "descripcion 4",
+            "url": "http://proyecto1.com"
+        }        
+    ],
+
+    "direccion": "direccion A",
+    "telefono": 1234567,
+    "email": "ejemplo@email.com",
+    "titulo": "Sobre nosotros",
+    "descripcion": "Esta es nuestra empresa"
+
+}
