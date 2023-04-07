@@ -28,6 +28,9 @@ import { NavbarComponent } from './componentes/navbar/navbar.component';
 
 import { FooterComponent } from './componentes/footer/footer.component';
 import { EditarFooterComponent } from './componentes/footer/editar-footer/editar-footer.component';
+import { ModalEliminarComponent } from './componentes/modal-eliminar/modal-eliminar.component';
+import { AppRoutingModule } from './app-routing.module';
+import { IndexComponent } from './componentes/index/index.component';
 
 
 @NgModule({
@@ -51,10 +54,13 @@ import { EditarFooterComponent } from './componentes/footer/editar-footer/editar
     EditarHabilidadesComponent,
     NavbarComponent,
     FooterComponent,
-    EditarFooterComponent
+    EditarFooterComponent,
+    ModalEliminarComponent,
+    IndexComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
