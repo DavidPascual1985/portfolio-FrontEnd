@@ -1,21 +1,27 @@
-<div class="modal fade" id="botonLogin" tabindex="-1" aria-labelledby="exampleModalLael" aria-hidden="true">
+<div class="modal fade" id="botonSobreMi" tabindex="-1" aria-labelledby="exampleModalLael" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLbel">Ingresá tus datos</h1>
+                <h1 class="modal-title fs-5" id="exampleModalLbel">Ingresá los archivos/datos correspondientes</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <form>
-                    <label for="userFormLabel" class="frm-label">Usuario</label>
-                    <input type="text" class="form-control" id="validaionServerUsername">
-                    <label for="userFormLabel" class="form-label">Contraseña</label>
-                    <input type="password" class="form-control" id="inputPassword">
+                    <label for="myFile" class="form-label">Imagen del baner</label>
+                    <input type="file" class="form-control" accept="image/*" id="validaionServerUsername">
+                    <label for="myFile" class="form-label">Imagen de perfil</label>
+                    <input type="file" class="form-control" accept="image/*" height="240px"
+                        id="validaionServerUsername">
+                    <label for="userFormLabel" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="inputName" size="40">
+                    <label for="userFormLabel" class="form-label">Sobre mi</label>
+                    <textarea class="form-control" id="inputName" rows="4"
+                        placeholder="Puedes escribir hasta 100 letras aquí..." size="100"></textarea>
                 </form>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                <button type="button" class="btn btn-primary">Aceptar</button>
+                <button type="checkbox" class="btn btn-primary">Modificar</button>
             </div>
         </div>
     </div>

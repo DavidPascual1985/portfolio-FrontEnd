@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { PortfolioService } from 'src/app/servicios/portfolio.service';
 
 @Component({
   selector: 'app-sobre-mi',
@@ -7,5 +8,8 @@ import { Component } from '@angular/core';
 })
 
 export class SobreMiComponent {
+  constructor(private datosPortfolio:PortfolioService) {
+    this.datosPortfolio.obtenerDatos();
+  }
 
 }
