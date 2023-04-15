@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { AppRoutingModule } from './app-routing.module';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './componentes/header/header.component';
@@ -29,7 +32,6 @@ import { NavbarComponent } from './componentes/navbar/navbar.component';
 import { FooterComponent } from './componentes/footer/footer.component';
 import { EditarFooterComponent } from './componentes/footer/editar-footer/editar-footer.component';
 import { ModalEliminarComponent } from './componentes/modal-eliminar/modal-eliminar.component';
-import { AppRoutingModule } from './app-routing.module';
 import { IndexComponent } from './componentes/index/index.component';
 
 
@@ -60,8 +62,12 @@ import { IndexComponent } from './componentes/index/index.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
+
   providers: [],
   bootstrap: [AppComponent]
 })
