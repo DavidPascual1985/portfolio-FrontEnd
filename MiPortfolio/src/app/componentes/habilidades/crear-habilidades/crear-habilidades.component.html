@@ -1,28 +1,28 @@
-<div class="modal fade" id="botonCrearSkills" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="botonCrearSkills" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">Habilidades</h1>
+                <h1 class="modal-title fs-5">Habilidades</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <form>
+                <form [formGroup]="form" (ngSubmit)="onEnviar($event)">
                     <div class="row">
                         <div class="col-7">
                             <label for="userFormLabel" class="form-label">Habilidad</label>
-                            <input type="text" class="form-control" size="20">
+                            <input type="text" formControlName="habilidad" class="form-control" size="20">
                         </div>
                         <div class="col-3">
-                            <label for="userFormLabel" class="form-label">Porcentage</label>
+                            <label for="userFormLabel" class="form-label">Porcentaje</label>
                             <div class="input-group mb-3">
-                                <input type="number" class="form-control" aria-label="Porcentage de habilidad"
+                                <input type="number" formControlName="porcentaje" class="form-control" aria-label="Porcentage de habilidad"
                                     min="0" max="100" step="5">
                                 <span class="input-group-text">%</span>
                             </div>
                         </div>
                         <div class="col">
                             <label for="favcolor" class="form-label">Color</label>
-                            <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+                            <input type="color" formControlName="color" id="favcolor" name="favcolor" value="#ff0000">
                         </div>
                     </div>
                 </form>

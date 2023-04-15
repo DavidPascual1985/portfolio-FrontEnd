@@ -6,16 +6,16 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <form>
+                <form [formGroup]="form" (ngSubmit)="onEnviar($event)">
                     <label for="myFile" class="form-label">Imagen del baner</label>
-                    <input type="file" class="form-control" accept="image/*" id="validaionServerUsername">
+                    <input type="file" formControlName="imagenBaner" class="form-control" accept="image/*" id="validaionServerUsername">
                     <label for="myFile" class="form-label">Imagen de perfil</label>
-                    <input type="file" class="form-control" accept="image/*" height="240px"
+                    <input type="file" formControlName="imagenPerfil" class="form-control" accept="image/*" height="240px"
                         id="validaionServerUsername">
                     <label for="userFormLabel" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" id="inputName" size="40">
+                    <input type="text" formControlName="nombre" class="form-control" id="inputName" size="40">
                     <label for="userFormLabel" class="form-label">Sobre mi</label>
-                    <textarea class="form-control" id="inputName" rows="4"
+                    <textarea class="form-control" formControlName="sobreMi" id="inputName" rows="4"
                         placeholder="Puedes escribir hasta 100 letras aquí..." size="100"></textarea>
                 </form>
             </div>

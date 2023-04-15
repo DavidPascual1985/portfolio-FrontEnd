@@ -15,15 +15,15 @@
     <div class="row row-cols-1 row-cols-md-3 g-4">
 
         <!-- CARD Proyecto1 -->
-        <div class="col">
+        <div class="col" *ngFor="let proyectos of proyectosLista">
             <div class="card h-100">
-                <img src="assets/img/img_proyecto2.jpg" class="card-img-top" alt="img_proyecto2">
+                <img [src]= "proyectos.imagen" class="card-img-top" alt="img_proyecto">
                 <div class="container-fluid">
                     <div class="card-body-mp-0">
                         <div class="card-header-mp-0 bg-transparent">
                             <div class="card-title">
                                 <nav class="navbar">
-                                    <span class="navbar-text h4 text-dark">Proyecto 1</span>
+                                    <span class="navbar-text h4 text-dark">{{proyectos.nombre}}</span>
                                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                                         <button class="btn btn-primary me-md-2" type="button"
                                             data-bs-toggle="modal" data-bs-target="#botonEditarProyectos">
@@ -38,108 +38,9 @@
                             </div>
                         </div>
                     </div>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in
-                        to additional content. This content is a little bit longer.</p>
+                    <p class="card-text">{{proyectos.descripcion}}</p>
                     <div class="card-body">
-                        <a href="#" class="card-link fw-light">Link del proyecto</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- CARD Proyecto2 -->
-        <div class="col">
-            <div class="card h-100">
-                <img src="assets/img/5herramientas_0.png" class="card-img-top" alt="proyecto1">
-                <div class="container-fluid">
-                    <div class="card-body-mp-0">
-                        <div class="card-header-mp-0 bg-transparent">
-                            <div class="card-title">
-                                <nav class="navbar">
-                                    <span class="navbar-text h4 text-dark">Proyecto 2</span>
-                                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                                        <button class="btn btn-primary me-md-2" type="button"
-                                            data-bs-toggle="modal" data-bs-target="#botonEditarProyectos">
-                                            <i class="fa-regular fa-pen-to-square"></i>
-                                        </button>
-                                        <button class="btn btn-primary" type="button" data-bs-toggle="modal"
-                                            data-bs-target="#botonEliminar">
-                                            <i class="fa-regular fa-trash-can"></i>
-                                        </button>
-                                    </div>
-                                </nav>
-                            </div>
-                        </div>
-                        <p class="card-text">This is a short card.</p>
-                    </div>
-                    <div class="card-body">
-                        <a href="#" class="card-link fw-light">Link del proyecto</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- CARD Proyecto3 -->
-        <div class="col">
-            <div class="card h-100">
-                <img src="assets/img/img_proyecto3.jpg" class="card-img-top" alt="img_proyecto3">
-                <div class="container-fluid">
-                    <div class="card-body-mp-0">
-                        <div class="card-header-mp-0 bg-transparent">
-                            <div class="card-title">
-                                <nav class="navbar">
-                                    <span class="navbar-text h4 text-dark">Proyecto 3</span>
-                                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                                        <button class="btn btn-primary me-md-2" type="button"
-                                            data-bs-toggle="modal" data-bs-target="#botonEditarProyectos">
-                                            <i class="fa-regular fa-pen-to-square"></i>
-                                        </button>
-                                        <button class="btn btn-primary" type="button" data-bs-toggle="modal"
-                                            data-bs-target="#botonEliminar">
-                                            <i class="fa-regular fa-trash-can"></i>
-                                        </button>
-                                    </div>
-                                </nav>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in
-                        to additional content.</p>
-                    <div class="card-body">
-                        <a href="#" class="card-link fw-light">Link del proyecto</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- CARD Proyecto4 -->
-        <div class="col">
-            <div class="card h-100">
-                <img src="./assets/img/Proyecto4.png" class="card-img-top" alt="...">
-                <div class="container-fluid">
-                    <div class="card-body-mp-0">
-                        <div class="card-header-mp-0 bg-transparent">
-                            <div class="card-title">
-                                <nav class="navbar">
-                                    <span class="navbar-text h4 text-dark">Proyecto 4</span>
-                                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                                        <button class="btn btn-primary me-md-2" type="button"
-                                            data-bs-toggle="modal" data-bs-target="#botonEditarProyectos">
-                                            <i class="fa-regular fa-pen-to-square"></i>
-                                        </button>
-                                        <button class="btn btn-primary" type="button" data-bs-toggle="modal"
-                                            data-bs-target="#botonEliminar">
-                                            <i class="fa-regular fa-trash-can"></i>
-                                        </button>
-                                    </div>
-                                </nav>
-                            </div>
-                        </div>
-                        <p class="card-text">This is a longer card with supporting text below as a natural
-                            lead-in to additional content. This content is a little bit longer.</p>
-                        <div class="card-body">
-                            <a href="#" class="card-link fw-light">Link del proyecto</a>
-                        </div>
+                        <a [href]= "proyectos.url" class="card-link fw-light">Link del proyecto</a>
                     </div>
                 </div>
             </div>

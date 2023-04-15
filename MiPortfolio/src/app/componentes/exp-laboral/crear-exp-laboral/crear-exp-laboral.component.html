@@ -6,29 +6,29 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <form>
+                <form [formGroup]="form" (ngSubmit)="onEnviar($event)">
                     <div class="row">
                         <div class="col">
                             <label for="userFormLabel" class="form-label">Empresa</label>
-                            <input type="text" class="form-control">
+                            <input type="text" formControlLabel="empresa" class="form-control">
                         </div>
                         <div class="col">
                             <label for="userFormLabel" class="form-label">Cargo desempeñado</label>
-                            <input type="text" class="form-control">
+                            <input type="text" formControlLabel="cargo" class="form-control">
                         </div>
                     </div>
                     <label for="userFormLabel" class="form-label">Descripción de tareas realizadas</label>
-                    <textarea class="form-control" id="inputName" rows="4"
+                    <textarea class="form-control" formControlLabel="tareas" id="inputName" rows="4"
                         placeholder="Describe las tareas desarrolladas..." size="300">
                     </textarea>
                     <div class="row">
                         <div class="col">
                             <label for="userFormLabel" class="form-label">Desde</label>
-                            <input type="date" class="form-control">
+                            <input type="date" formControlLabel="desde" class="form-control">
                         </div>
                         <div class="col">
                             <label for="userFormLabel" class="form-label">Hasta</label>
-                            <input type="date" class="form-control">
+                            <input type="date" formControlLabel="hasta" class="form-control">
                         </div>
                     </div>
                 </form>

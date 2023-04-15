@@ -16,18 +16,18 @@
         <div class="d-flex flex-column flex-md-row">
             <div class="col-sm">
                 <div class="card custom-card my-2">
-                    <div class="card-cover" style="background-image: url(assets/img/imagen-baner.png);">
-                        <div class="circle-image" style="background-image: url(assets/img/ImagenPerfil.jpg);">
+                    <div class="card-cover" [ngStyle]="{'background-image': 'url(' + imagenBaner + ')'}">
+                        <div class="circle-image" [ngStyle]="{'background-image': 'url(' + imagenPerfil + ')'}">
                         </div>
                     </div>
                     <div class="card-body">
-                        <h4 class="card-title">David Pascual</h4>
-                        <p class="card-text">Full-Stack Web Developer Jr</p>
+                        <h4 class="card-title">{{nombreSobreMi}}</h4>
+                        <p class="card-text">{{textoSobreMi}}</p>
                     </div>
+
                 </div>
             </div>
         </div>
     </div>
+    <app-crear-sobre-mi></app-crear-sobre-mi>
 </section>
-
-<app-crear-sobre-mi></app-crear-sobre-mi>

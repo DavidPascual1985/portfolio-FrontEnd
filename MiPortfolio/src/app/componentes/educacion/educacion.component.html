@@ -16,22 +16,23 @@
         <div class="row">
 
             <!--Card de EDUCACION 1-->
-            <div class="col-sm-6 mb-3 mb-sm-0">
+            <div class="col-sm-6 mb-3 mb-sm-0" *ngFor="let educacion of educacionLista">
                 <div class="card">
                     <div class="card-header">
                         <blockquote class="blockquote m-2">
-                            <h4>Conocimientos adquiridos</h4>
+                            <h4>{{educacion.titulo}}</h4>
                         </blockquote>
                     </div>
                     <div class="card-body">
                         <figure>
                             <blockquote class="blockquote">
-                                <p>Institución</p>
+                                <p>{{educacion.institucion}}</p>
                             </blockquote>
                             <figcaption class="blockquote-footer">
-                                Desde <cite title="Source Title">FECHA </cite>hasta <cite
-                                    title="Source Title">FECHA</cite>
+                                Desde <cite title="Source Title">{{educacion.desde}} </cite>hasta <cite
+                                    title="Source Title">{{educacion.hasta}}</cite>
                             </figcaption>
+                            <p class=text-end>{{educacion.aprendizaje}}</p>
                         </figure>
                         <div class="d-grid gap-2 d-sm-flex justify-content-sm-end">
                             <button class="btn btn-primary me-md-2" type="button" data-bs-toggle="modal"
@@ -46,104 +47,9 @@
                     </div>
                 </div>
             </div>
-            <!--Card de EDUCACION 2-->
-            <div class="col-sm-6 mb-3 mb-sm-0">
-                <div class="card">
-                    <div class="card-header">
-                        <blockquote class="blockquote m-2">
-                            <h4>Conocimientos adquiridos</h4>
-                        </blockquote>
-                    </div>
-                    <div class="card-body">
-                        <figure>
-                            <blockquote class="blockquote">
-                                <p>Institución</p>
-                            </blockquote>
-                            <figcaption class="blockquote-footer">
-                                Desde <cite title="Source Title">FECHA </cite>hasta <cite
-                                    title="Source Title">FECHA</cite>
-                            </figcaption>
-                        </figure>
-                        <div class="d-grid gap-2 d-sm-flex justify-content-sm-end">
-                            <button class="btn btn-primary me-md-2" type="button" data-bs-toggle="modal"
-                                data-bs-target="#botonEditarEducacion">
-                                <i class="fa-regular fa-pen-to-square"></i>
-                            </button>
-                            <button class="btn btn-primary" type="button" data-bs-toggle="modal"
-                                data-bs-target="#botonEliminar">
-                                <i class="fa-regular fa-trash-can"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+           
         </div>
 
-        <div class="row">
-
-            <!--Card de EDUCACION 3-->
-            <div class="col-sm-6 mb-3 mb-sm-0">
-                <div class="card">
-                    <div class="card-header">
-                        <blockquote class="blockquote m-2">
-                            <h4>Conocimientos adquiridos</h4>
-                        </blockquote>
-                    </div>
-                    <div class="card-body">
-                        <figure>
-                            <blockquote class="blockquote">
-                                <p>Institución</p>
-                            </blockquote>
-                            <figcaption class="blockquote-footer">
-                                Desde <cite title="Source Title">FECHA </cite>hasta <cite
-                                    title="Source Title">FECHA</cite>
-                            </figcaption>
-                        </figure>
-                        <div class="d-grid gap-2 d-sm-flex justify-content-sm-end">
-                            <button class="btn btn-primary me-md-2" type="button" data-bs-toggle="modal"
-                                data-bs-target="#botonEditarEducacion">
-                                <i class="fa-regular fa-pen-to-square"></i>
-                            </button>
-                            <button class="btn btn-primary" type="button" data-bs-toggle="modal"
-                                data-bs-target="#botonEliminar">
-                                <i class="fa-regular fa-trash-can"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--Card de EDUCACION 4-->
-            <div class="col-sm-6 mb-3 mb-sm-0">
-                <div class="card">
-                    <div class="card-header">
-                        <blockquote class="blockquote m-2">
-                            <h4>Conocimientos adquiridos</h4>
-                        </blockquote>
-                    </div>
-                    <div class="card-body">
-                        <figure>
-                            <blockquote class="blockquote">
-                                <p>Institución</p>
-                            </blockquote>
-                            <figcaption class="blockquote-footer">
-                                Desde <cite title="Source Title">FECHA </cite>hasta <cite
-                                    title="Source Title">FECHA</cite>
-                            </figcaption>
-                        </figure>
-                        <div class="d-grid gap-2 d-sm-flex justify-content-sm-end">
-                            <button class="btn btn-primary me-md-2" type="button" data-bs-toggle="modal"
-                                data-bs-target="#botonEditarEducacion">
-                                <i class="fa-regular fa-pen-to-square"></i>
-                            </button>
-                            <button class="btn btn-primary" type="button" data-bs-toggle="modal"
-                                data-bs-target="#botonEliminar">
-                                <i class="fa-regular fa-trash-can"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 </section>
 <app-crear-educacion></app-crear-educacion>

@@ -2,21 +2,29 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLbel">Ingresá tus datos</h1>
+                <h1 class="modal-title fs-5">Ingresá tus datos</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
+            <form [formGroup]="form" (ngSubmit)="onEnviar($event)">
             <div class="modal-body">
-                <form>
                     <label for="userFormLabel" class="frm-label">Usuario</label>
-                    <input type="text" class="form-control" id="validaionServerUsername">
+                    <input type="text" formControlName="usuario" class="form-control">
+                    <div *ngIf="Usuario?.errors  && Usuario?.touched">    
+                        <p *ngIf="Usuario?.hasError('required')" class="error">
+                            El usuario es requerido.
+                        </p>
+                        <p *ngIf="Usuario?.hasError('text')" class="error">
+                            El formato del usuario no es válido.
+                          </p>
+                    </div>
                     <label for="userFormLabel" class="form-label">Contraseña</label>
-                    <input type="password" class="form-control" id="inputPassword">
-                </form>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                <button type="button" class="btn btn-primary">Aceptar</button>
-            </div>
+                    <input type="password" formControlName="contraseña" class="form-control">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary">Aceptar</button>
+                </div>
+            </form>
         </div>
     </div>
 </div>

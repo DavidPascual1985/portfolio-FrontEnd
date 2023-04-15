@@ -16,11 +16,11 @@
     <div class="container-fluid-around">
 
 
-        <!-- CARD de Experiencia 1 -->
-        <div class="card">
+        <!-- CARD de Experiencia -->
+        <div class="card" *ngFor="let experiencia of experienciaLista">
             <div class="card-header">
                 <nav class="navbar bg-body-tertiary">
-                    <h4> Encabezado de experiencia 1</h4>
+                    <h4>{{experiencia.empresa}} || {{experiencia.cargo}}</h4>
 
                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                         <button class="btn btn-primary me-md-2" type="button" data-bs-toggle="modal"
@@ -35,87 +35,13 @@
                 </nav>
             </div>
             <div class="card-body">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto ad nisi aut
-                    dolorum nulla, quibusdam placeat, aliquam quisquam velit obcaecati doloribus incidunt
-                    maiores
-                    laudantium laborum nesciunt aliquid adipisci consectetur quasi?</p>
+                <p>{{experiencia.tareas}}</p>
             </div>
             <div class="card-body">
                 <div class="card-footer">
                     <nav class="navbar bg-body-tertiary">
                         <div class="container">
-                            <span style="color:gray"> Periodo de desempeño</span>
-                        </div>
-                    </nav>
-                </div>
-            </div>
-        </div>
-
-        <!-- CARD de Experiencia 2 -->
-        <div class="card">
-            <div class="card-header">
-                <nav class="navbar bg-body-tertiary">
-                    <h4> Encabezado de experiencia 2</h4>
-
-                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                        <button class="btn btn-primary me-md-2" type="button" data-bs-toggle="modal"
-                            data-bs-target="#botonEditarExpLaboral">
-                            <i class="fa-regular fa-pen-to-square"></i>
-                        </button>
-                        <button class="btn btn-primary" type="button" data-bs-toggle="modal"
-                            data-bs-target="#botonEliminar">
-                            <i class="fa-regular fa-trash-can"></i>
-                        </button>
-                    </div>
-                </nav>
-            </div>
-            <div class="card-body">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto ad nisi aut
-                    dolorum nulla, quibusdam placeat, aliquam quisquam velit obcaecati doloribus incidunt
-                    maiores
-                    laudantium laborum nesciunt aliquid adipisci consectetur quasi?
-                </p>
-            </div>
-            <div class="card-body">
-                <div class="card-footer">
-                    <nav class="navbar bg-body-tertiary">
-                        <div class="container">
-                            <span style="color:gray"> Periodo de desempeño</span>
-                        </div>
-                    </nav>
-                </div>
-            </div>
-        </div>
-
-        <!-- CARD de Experiencia 3 -->
-        <div class="card">
-            <div class="card-header">
-                <nav class="navbar bg-body-tertiary">
-                    <h4> Encabezado de experiencia</h4>
-
-                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                        <button class="btn btn-primary me-md-2" type="button" data-bs-toggle="modal"
-                            data-bs-target="#botonEditarExpLaboral">
-                            <i class="fa-regular fa-pen-to-square"></i>
-                        </button>
-                        <button class="btn btn-primary" type="button" data-bs-toggle="modal"
-                            data-bs-target="#botonEliminar">
-                            <i class="fa-regular fa-trash-can"></i>
-                        </button>
-                    </div>
-                </nav>
-            </div>
-            <div class="card-body">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto ad nisi aut
-                    dolorum nulla, quibusdam placeat, aliquam quisquam velit obcaecati doloribus incidunt
-                    maiores
-                    laudantium laborum nesciunt aliquid adipisci consectetur quasi?</p>
-            </div>
-            <div class="card-body">
-                <div class=" card-footer">
-                    <nav class="navbar bg-body-tertiary">
-                        <div class="container">
-                            <span style="color:gray"> Periodo de desempeño</span>
+                            <span style="color:gray">{{experiencia.desde}} / {{experiencia.hasta}}</span>
                         </div>
                     </nav>
                 </div>

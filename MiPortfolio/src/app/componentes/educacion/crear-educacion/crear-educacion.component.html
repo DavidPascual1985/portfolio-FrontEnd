@@ -1,5 +1,4 @@
-<div class="modal fade" id="botonCrearEducacion" tabindex="-1" aria-labelledby="exampleModalLbel"
-    aria-hidden="true">
+<div class="modal fade" id="botonCrearEducacion" tabindex="-1" aria-labelledby="exampleModalLbel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
@@ -8,17 +7,17 @@
             </div>
 
             <div class="modal-body">
-                <form>
+                <form [formGroup]="form" (ngSubmit)="onEnviar($event)">
                     <div class="row">
                         <div class="col">
                             <label for="userFormLabel" class="form-label">Titulo o disciplina adquirida
                             </label>
-                            <input type="text" class="form-control">
+                            <input type="text" formControlName="titulo" class="form-control">
                         </div>
 
                         <div class="col">
                             <label for="userFormLabel" class="form-label">Institución</label>
-                            <input type="text" class="form-control">
+                            <input type="text" formControlName="institucion" class="form-control">
                         </div>
                     </div>
 
@@ -27,12 +26,14 @@
 
                         <div class="col">
                             <label for="userFormLabel" class="form-label">Desde</label>
-                            <input type="date" class="form-control">
+                            <input type="date" formControlName="desde" class="form-control">
                         </div>
                         <div class="col">
                             <label for="userFormLabel" class="form-label">Hasta</label>
-                            <input type="date" class="form-control">
+                            <input type="date" formControlName="hasta" class="form-control">
                         </div>
+
+                        <!-- No se como conectar esta sección al TS del mismo componente -->
                         <div class="col">
                             <label for="userFormLabel" class="form-label">Metodo de aprendizaje</label>
                             <select id="inputEducacion" class="form-select">
@@ -41,6 +42,8 @@
                                 <option value="2">Online/Autodidacta</option>
                             </select>
                         </div>
+                        <!-- Hasta aquí se referencia el comentario anterior a este -->
+
                     </div>
                 </form>
             </div>

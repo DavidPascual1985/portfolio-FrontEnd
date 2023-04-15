@@ -1,27 +1,28 @@
-<div class="modal fade" id="botonProyectos" tabindex="-1" aria-labelledby="exampleModalLael" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLbel">Ingresá los proyectos realizados</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <form>
+<form [formGroup]="form" (ngSubmit)="onEnviar($event)">
+    <div class="modal fade" id="botonProyectos" tabindex="-1" aria-labelledby="exampleModalLael" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLbel">Ingresá los proyectos realizados</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
                     <label for="myFile" class="form-label">Imagen del Proyecto</label>
-                    <input type="file" class="form-control" accept="image/*" id="validaionServerUsername">
+                    <input type="file" formControlName="imagen" class="form-control" accept="image/*"
+                        id="validaionServerUsername">
                     <label for="userFormLabel" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" id="inputName" size="40">
+                    <input type="text" formControlName="nombre" class="form-control" id="inputName" size="40">
                     <label for="userFormLabel" class="form-label">Descripción</label>
-                    <textarea class="form-control" id="userFormLabel" rows="4"
+                    <textarea class="form-control" formControlName="descripcion" id="userFormLabel" rows="4"
                         placeholder="Puedes escribir hasta 200 caracteres aquí..." size="200"></textarea>
                     <label for="userFormLabel" class="form-label">Enlace URL</label>
-                    <input type="url" class="form-control" id="userFormLabel" name="homepage">
-                </form>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                <button type="checkbox" class="btn btn-primary">Aceptar</button>
+                    <input type="url" formControlName="url" class="form-control" id="userFormLabel" name="homepage">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="checkbox" class="btn btn-primary">Aceptar</button>
+                </div>
             </div>
         </div>
     </div>
-</div>
+</form>

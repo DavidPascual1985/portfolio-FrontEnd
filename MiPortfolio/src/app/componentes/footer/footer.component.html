@@ -4,19 +4,19 @@
 
         <div>
             <i class="fa fa-map-marker"></i>
-            <p>San Antonio de Arredondo, Cordoba, Argentina</p>
+            <p>{{footerDireccion}}</p>
         </div>
 
         <div>
-            <a href="https://wa.me/543541629986" target="_blank">
+            <a [href]="footerURLWhatsapp" target="_blank">
                 <i class="fa fa-phone"></i>
-                <p>+54 3541-6299-86</p>
+                <p>{{footerTelefono}}</p>
             </a>
         </div>
 
         <div>
             <i class="fa fa-envelope"></i>
-            <p><a href="mailto:davidmiguelpascual@gmail.com" target="_blank">davidmiguelpascual@gmail.com</a></p>
+            <p><a [href]="footerURLEmail" target="_blank">{{footerEmail}}</a></p>
         </div>
 
     </div>
@@ -44,9 +44,8 @@
             </button>
         </div>
         <p class="footer-company-about">
-            <span>Sobre la compañia</span>
-            Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus
-            vehicula sit amet.
+            <span>{{footerTitulo}}</span>
+            {{footerDescripcion}}
         </p>
     </div>
     <app-editar-footer></app-editar-footer>
