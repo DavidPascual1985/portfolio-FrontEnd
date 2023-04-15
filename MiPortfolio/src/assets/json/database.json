@@ -3,89 +3,86 @@
     "sobreMi": "Full Stack Web Developer Jr",
     "imagenBaner": "../assets/img/imagen-baner.png",
     "imagenPerfil": "../assets/img/imagenPerfil.jpg",
-
-    "experiencias":[
+    "experiencias": [
         {
-            "id":1,
-            "empresa": "empresa 1",
-            "cargo": "cargo 1",
-            "tareas": "tarea 1",
+            "id": 1,
+            "empresa": "Empresa 1",
+            "cargo": "Cargo 1",
+            "tareas": "1-Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto ad nisi aut dolorum nulla, quibusdam placeat, aliquam quisquam velit obcaecati doloribus incidunt maiores laudantium laborum nesciunt aliquid adipisci consectetur quasi?",
             "desde": "12-12-2001",
             "hasta": "12-12-2002"
         },
         {
-            "id":2,
-            "empresa": "empresa 2",
-            "cargo": "cargo 2",
-            "tareas": "tarea 2",
+            "id": 2,
+            "empresa": "Empresa 2",
+            "cargo": "Cargo 2",
+            "tareas": "2-Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto ad nisi aut dolorum nulla, quibusdam placeat, aliquam quisquam velit obcaecati doloribus incidunt maiores laudantium laborum nesciunt aliquid adipisci consectetur quasi?",
             "desde": "12-12-2003",
             "hasta": "12-12-2004"
         },
         {
-            "id":3,
-            "empresa": "empresa 3",
-            "cargo": "cargo 3",
-            "tareas": "tarea 3",
+            "id": 3,
+            "empresa": "Empresa 3",
+            "cargo": "Cargo 3",
+            "tareas": "3-Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto ad nisi aut dolorum nulla, quibusdam placeat, aliquam quisquam velit obcaecati doloribus incidunt maiores laudantium laborum nesciunt aliquid adipisci consectetur quasi?",
             "desde": "12-12-2005",
             "hasta": "12-12-2006"
         }
     ],
-
     "educacion": [
         {
-            "id":1,
-            "titulo": "titulo 1",
-            "institucion": "institucion 2",
-            "desde":"12-12-1995",
+            "id": 1,
+            "titulo": "Titulo 1",
+            "institucion": "Institucion 2",
+            "desde": "12-12-1995",
             "hasta": "12-12-1996",
-            "aprendizaje": "prescencial"
+            "aprendizaje": "Prescencial"
         },
         {
-            "id":2,
-            "titulo": "titulo 2",
-            "institucion": "institucion 2",
-            "desde":"12-12-1997",
+            "id": 2,
+            "titulo": "Titulo 2",
+            "institucion": "Institucion 2",
+            "desde": "12-12-1997",
             "hasta": "12-12-1998",
-            "aprendizaje": "prescencial"
+            "aprendizaje": "Prescencial"
         },
         {
-            "id":3,
-            "titulo": "titulo 3",
-            "institucion": "institucion 3",
-            "desde":"12-12-1999",
+            "id": 3,
+            "titulo": "Titulo 3",
+            "institucion": "Institucion 3",
+            "desde": "12-12-1999",
             "hasta": "12-12-2000",
-            "aprendizaje": "prescencial"
+            "aprendizaje": "Online"
         },
         {
-            "id":4,
-            "titulo": "conocimiento 4",
-            "institucion": "institucion 4",
-            "desde":"12-12-2001",
+            "id": 4,
+            "titulo": "Titulo 4",
+            "institucion": "Institucion 4",
+            "desde": "12-12-2001",
             "hasta": "12-12-2002",
-            "aprendizaje": "prescencial"
+            "aprendizaje": "Prescencial"
         }
     ],
-
     "habilidades": [
         {
             "id": 1,
             "habilidad": "habilidad 1",
-            "porcentaje": 10
+            "porcentaje": 30
         },
         {
             "id": 2,
             "habilidad": "habilidad 2",
-            "porcentaje": 20
+            "porcentaje": 40
         },
         {
             "id": 3,
             "habilidad": "habilidad 3",
-            "porcentaje": 30
+            "porcentaje": 50
         },
         {
             "id": 4,
             "habilidad": "habilidad 4",
-            "porcentaje": 40
+            "porcentaje": 80
         },
         {
             "id": 5,
@@ -98,42 +95,41 @@
             "porcentaje": 60
         }
     ],
-
     "proyectos": [
         {
             "id": 1,
-            "imagen": "..assets/img/5herramientas_0.png",
-            "nombre": "proyecto 1",
-            "descripcion": "descripcion 1",
+            "imagen": "assets/img/5herramientas_0.png",
+            "nombre": "Proyecto 1",
+            "descripcion": "Descripcion 1 - Aquí figura una descripción de nuestro proyecto a modo de referencia",
             "url": "http://proyecto1.com"
         },
         {
             "id": 2,
-            "imagen": "..assets/img/img_proyecto2.jpg",
-            "nombre": "proyecto 2",
-            "descripcion": "descripcion 2",
+            "imagen": "assets/img/img_proyecto2.jpg",
+            "nombre": "Proyecto 2",
+            "descripcion": "Descripcion 2 - Aquí figura una descripción de nuestro proyecto a modo de referencia",
             "url": "http://proyecto1.com"
         },
         {
-            "id": 3git status,
-            "imagen": "..assets/img/img_proyecto3.jpg",
-            "nombre": "proyecto 3",
-            "descripcion": "descripcion 3",
+            "id": 3,
+            "imagen": "assets/img/img_proyecto3.jpg",
+            "nombre": "Proyecto 3",
+            "descripcion": "Descripcion 3 - Aquí figura una descripción de nuestro proyecto a modo de referencia",
             "url": "http://proyecto1.com"
         },
         {
             "id": 4,
-            "imagen": "..assets/img/Proyecto4.png",
-            "nombre": "proyecto 4",
-            "descripcion": "descripcion 4",
+            "imagen": "assets/img/Proyecto4.png",
+            "nombre": "Proyecto 4",
+            "descripcion": "Descripcion 4 - Aquí figura una descripción de nuestro proyecto a modo de referencia",
             "url": "http://proyecto1.com"
-        }        
+        }
     ],
-
-    "direccion": "direccion A",
+    "direccion": "Direccion A, Ciudad, País",
     "telefono": 1234567,
+    "urlWhatsApp": "https://wa.me/543541629986",
     "email": "ejemplo@email.com",
-    "titulo": "Sobre nosotros",
-    "descripcion": "Esta es nuestra empresa"
-
+    "urlEmail": "mailto:davidmiguelpascual@gmail.com",
+    "titulo": "Nuestra Empresa",
+    "descripcion": "Esta es nuestra empresa - Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacusvehicula sit amet."
 }
